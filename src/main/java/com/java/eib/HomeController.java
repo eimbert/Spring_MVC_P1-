@@ -33,7 +33,7 @@ public class HomeController {
 		String formattedDate = dateFormat.format(date);
 		
 		model.addAttribute("serverTime", formattedDate );
-		//model.addAttribute("msg", "Please Enter Your Login Details");
+		model.addAttribute("msg", "Please Enter Your Login Details");
 
 		
 		return "home";
