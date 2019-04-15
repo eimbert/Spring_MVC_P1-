@@ -53,11 +53,8 @@ public class HomeController {
 
 	    if (loginBean != null && loginBean.getUserName() != null & loginBean.getPassword() != null) {
 	      if ((loginBean.getUserName().equals("admin")) && (loginBean.getPassword().equals("admin"))) {
-	    	  model.addAttribute("ok", "Nice Details");
-		      return "home";
-	    	  
-	    	  //model.addAttribute("msg", loginBean.getUserName());
-	        //return "success";
+	    	  model.addAttribute("msg", loginBean.getUserName());
+	    	  return "success";
 	      } else {
 	        model.addAttribute("error", "Invalid User: "+loginBean.getUserName()+ " and/or password: "+loginBean.getPassword());
 	        return "home";
