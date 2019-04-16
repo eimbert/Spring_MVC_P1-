@@ -8,7 +8,7 @@ pageEncoding="UTF-8"%>
 	<title>Spring Login Form</title>
 </head>
 <body>
-	<form:form name="submitForm" method="POST"  >
+	<form:form name="submitForm" method="POST" action="Pepe" >
 		<div align="center">
 			<table>
 				<tr>

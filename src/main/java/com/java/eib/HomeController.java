@@ -45,7 +45,7 @@ public class HomeController {
 	    return "home";
 	  }
 	
-	@RequestMapping(method = RequestMethod.POST)
+	@RequestMapping(value = "/Pepe", method = RequestMethod.POST)
 	  public String submit(Model model, @ModelAttribute("loginBean") LoginBean loginBean) {
 		  
 		  //System.out.println(loginBean.getUserName());
